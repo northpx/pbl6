@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "B4vD7WqcPwXHOzIWdzbQu0X6RZ/LW7xw5v1FoEykQPc=",
+  "Source": "BookingApp.API",
+  "BasePath": "_content/BookingApp.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
