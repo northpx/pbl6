@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace BookingApp.BookingApp.API.Service
 {
-    public interface IRoomService
+    public interface ITokenService
     {
+        string CreateToken(string username);
         
     }
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using BookingApp.BookingApp.API.Data.Entities;
@@ -11,14 +12,19 @@ namespace BookingApp.API.Data.Entities
     {
         [Key]
         public int Id { get; set; }
-        public int Number { get; set; }
+        [ForeignKey("RoomType")]
         public int RoomTypeId { get; set; }
-        public virtual RoomType RoomType { get; set; }
-        public decimal Price { get; set; }
-        public bool Available { get; set; }
-        public string Description { get; set; }
+        public RoomType RoomType { get; set; }
+        [Required]
+        public decimal Default_Price { get; set; }
+        [Required]
         public int MaxGuest { get; set; }
-        // public virtual ICollection<BookingDetail> BookingDetails { get; set; }
-        // public virtual ICollection<RoomImage> RoomImages { get; set; }
+        [Required]
+        public int status { get; set; }
+        [MaxLength(256)]
+        public string Description { get; set; }
+        
+        public ICollection<BookingDetail> BookingDetails { get; set; }
+        public ICollection<RoomImage> RoomImages { get; set; }
     }
 }

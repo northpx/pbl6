@@ -42,3 +42,7 @@ D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\Mi
 D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\Scrutor.dll
+D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll

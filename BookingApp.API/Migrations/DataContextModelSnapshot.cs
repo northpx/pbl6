@@ -25,22 +25,20 @@ namespace BookingApp.API.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<bool>("Available")
-                        .HasColumnType("tinyint(1)");
+                    b.Property<decimal>("Default_Price")
+                        .HasColumnType("decimal(65,30)");
 
                     b.Property<string>("Description")
-                        .HasColumnType("longtext");
+                        .HasMaxLength(256)
+                        .HasColumnType("varchar(256)");
 
                     b.Property<int>("MaxGuest")
                         .HasColumnType("int");
 
-                    b.Property<int>("Number")
+                    b.Property<int>("RoomTypeId")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(65,30)");
-
-                    b.Property<int>("RoomTypeId")
+                    b.Property<int>("status")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -48,6 +46,37 @@ namespace BookingApp.API.Migrations
                     b.HasIndex("RoomTypeId");
 
                     b.ToTable("Rooms");
+                });
+
+            modelBuilder.Entity("BookingApp.BookingApp.API.Data.Entities.BookingDetail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("BookingId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("RoomId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoomQuantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoomTypeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoomId");
+
+                    b.ToTable("BookingDetail");
                 });
 
             modelBuilder.Entity("BookingApp.BookingApp.API.Data.Entities.Role", b =>
@@ -65,21 +94,40 @@ namespace BookingApp.API.Migrations
                     b.ToTable("Role");
                 });
 
+            modelBuilder.Entity("BookingApp.BookingApp.API.Data.Entities.RoomImage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("DataUrl")
+                        .HasMaxLength(256)
+                        .HasColumnType("varchar(256)");
+
+                    b.Property<int?>("RoomId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoomId");
+
+                    b.ToTable("RoomImage");
+                });
+
             modelBuilder.Entity("BookingApp.BookingApp.API.Data.Entities.RoomType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<decimal>("BasePrice")
-                        .HasColumnType("decimal(65,30)");
-
                     b.Property<string>("Name")
-                        .HasColumnType("longtext");
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("varchar(256)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("RoomType");
+                    b.ToTable("RoomTypes");
                 });
 
             modelBuilder.Entity("BookingApp.BookingApp.API.Data.Entities.User", b =>
@@ -123,6 +171,27 @@ namespace BookingApp.API.Migrations
                         .IsRequired();
 
                     b.Navigation("RoomType");
+                });
+
+            modelBuilder.Entity("BookingApp.BookingApp.API.Data.Entities.BookingDetail", b =>
+                {
+                    b.HasOne("BookingApp.API.Data.Entities.Room", null)
+                        .WithMany("BookingDetails")
+                        .HasForeignKey("RoomId");
+                });
+
+            modelBuilder.Entity("BookingApp.BookingApp.API.Data.Entities.RoomImage", b =>
+                {
+                    b.HasOne("BookingApp.API.Data.Entities.Room", null)
+                        .WithMany("RoomImages")
+                        .HasForeignKey("RoomId");
+                });
+
+            modelBuilder.Entity("BookingApp.API.Data.Entities.Room", b =>
+                {
+                    b.Navigation("BookingDetails");
+
+                    b.Navigation("RoomImages");
                 });
 
             modelBuilder.Entity("BookingApp.BookingApp.API.Data.Entities.RoomType", b =>
