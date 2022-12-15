@@ -46,3 +46,13 @@ D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\Mi
 D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\Scrutor.dll
 D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
 D:\Project\Bac\Project\Ky7IT\KTHDV\BookingApp\BookingApp.API\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+D:\pbl6_backend\pbl6\BookingApp.API\obj\Debug\net6.0\BookingApp.API.csproj.AssemblyReference.cache
+D:\pbl6_backend\pbl6\BookingApp.API\obj\Debug\net6.0\BookingApp.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\pbl6_backend\pbl6\BookingApp.API\obj\Debug\net6.0\BookingApp.API.AssemblyInfoInputs.cache
+D:\pbl6_backend\pbl6\BookingApp.API\obj\Debug\net6.0\BookingApp.API.AssemblyInfo.cs
+D:\pbl6_backend\pbl6\BookingApp.API\obj\Debug\net6.0\BookingApp.API.csproj.CoreCompileInputs.cache
+D:\pbl6_backend\pbl6\BookingApp.API\obj\Debug\net6.0\BookingApp.API.MvcApplicationPartsAssemblyInfo.cs
+D:\pbl6_backend\pbl6\BookingApp.API\obj\Debug\net6.0\BookingApp.API.MvcApplicationPartsAssemblyInfo.cache
+D:\pbl6_backend\pbl6\BookingApp.API\obj\Debug\net6.0\BookingApp.API.dll
+D:\pbl6_backend\pbl6\BookingApp.API\obj\Debug\net6.0\refint\BookingApp.API.dll
+D:\pbl6_backend\pbl6\BookingApp.API\obj\Debug\net6.0\BookingApp.API.pdb
