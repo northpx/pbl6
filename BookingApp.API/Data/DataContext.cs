@@ -15,6 +15,7 @@ namespace BookingApp.BookingApp.API.Data
         public DbSet<Role> Role { get; set; }
         public DbSet<Room> Rooms { get; set; }
         public DbSet<RoomType> RoomTypes { get; set; }
+        public DbSet<Booking> bookings {get;set;}
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Room>()

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using MyNamespace;
 using Swashbuckle.AspNetCore.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -64,6 +65,7 @@ services.AddAuthentication(options =>
     });
 services.AddTransient<ITokenService, TokenService>();
 services.AddTransient<IRoomTypeRepository, RoomTypeRepository>();
+services.AddTransient<IBookingRepository, BookingRepository>();
 
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
 services.AddDbContext<DataContext>(
