@@ -1,0 +1,42 @@
+.NavBar{
+    background-color: #445d4d;
+    display: flex;
+    justify-content: center;
+}
+
+.NavContainer{
+    width: 100%;
+    max-width: 1024px;
+    color: white;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+img{
+    width: 100px;
+}
+
+.NavButton {
+    margin-left: 20px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #445d4d;
+}
+
+.NavList{
+    display: flex;
+    gap: 40px;
+}
+
+.NavPage{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Logo{
+    cursor: pointer;
+}
