@@ -1,0 +1,42 @@
+.SignupForm{
+    background-color: white;
+    position: absolute;
+    width: 20%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    min-width: 450px;
+}
+
+.SignupItem{
+    display: flex;
+    flex-direction: column;
+}
+
+.SignupButton{
+    background-color: #445d4d;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    margin: 40px 0px 5px 0px;
+}
+
+.SignupTitle{
+    margin: 5px 0px;
+}
+
+.NameInputItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.SignupNameItem{
+    width: 48%;
+}
